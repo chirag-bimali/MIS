@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MIS.API.Models
 {
     public class AppUserRole
     {
-        public Guid UserId { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public string RoleCode { get; set; } = null!;
 
         // Navigation properties

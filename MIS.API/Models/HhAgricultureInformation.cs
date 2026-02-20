@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MIS.API.Models
 {
     public class HhAgricultureInformation
     {
+        [Key]
+        public Guid Id { get; set; }
         public Guid HouseholdId { get; set; }
         public string? HasAgriculture { get; set; }
         public string? LandOwnership { get; set; }

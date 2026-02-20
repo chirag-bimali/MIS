@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MIS.API.Models
 {
     public class HhDisasterInfo
     {
+        [Key]
+        public Guid Id { get; set; }
         public Guid HouseholdId { get; set; }
         public string? DisasterExperienced { get; set; }
         public string? DisasterType { get; set; }

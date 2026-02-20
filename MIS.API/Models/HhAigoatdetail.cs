@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MIS.API.Models
 {
     public class HhAigoatdetail
     {
-        public Guid AigoatdetailId { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public Guid HouseholdId { get; set; }
         public int RowNo { get; set; }
         public string? AiGoatName { get; set; }

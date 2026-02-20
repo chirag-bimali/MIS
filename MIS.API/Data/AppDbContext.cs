@@ -9,7 +9,7 @@ public class AppDbContext : DbContext
         : base(options)
     {
     }
-
+  
     // Lookup tables
     public DbSet<OptionList> OptionLists => Set<OptionList>();
     public DbSet<OptionItem> OptionItems => Set<OptionItem>();

@@ -1,7 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
+
 namespace MIS.API.Models
 {
-    public class AppRole
+    public class AppRole 
     {
+        [Key]
+        public Guid Id { get; set; }
         public string RoleCode { get; set; } = null!;
         public string RoleName { get; set; } = null!;
 
