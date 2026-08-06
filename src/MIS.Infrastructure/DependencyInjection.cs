@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MIS.Application.Common.Interfaces;
 using MIS.Application.Features.Authentication;
+using MIS.Application.Features.DataCollection.Agricultures;
 using MIS.Application.Features.Geography.Districts;
 using MIS.Application.Features.Geography.Municipalities;
 using MIS.Application.Features.Geography.Provinces;
@@ -29,6 +31,12 @@ using MIS.Application.Features.Submissions;
 using MIS.Infrastructure.Persistence.Repositories.Submissions;
 using MIS.Application.Features.DataCollection.HouseInfo;
 using MIS.Infrastructure.Persistence.Repositories.DataCollection;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Decisions;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Economies;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Facilities;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Healths;
+using MIS.Infrastructure.Persistence;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Livestocks;
 
 namespace MIS.Infrastructure;
 
@@ -66,6 +74,14 @@ public static class DependencyInjection
 
     // Data Collection
     services.AddScoped<IHouseInfoRepo, HouseInfoRepo>();
+    services.AddScoped<IAgricultureRepo, AgricultureRepo>();
+    services.AddScoped<IDecisionRepo, DecisionsRepo>();
+    services.AddScoped<IEconomyRepo, EconomyRepo>();
+    services.AddScoped<IFacilityRepo, FacilityRepo>();
+    services.AddScoped<ILivestockRepo, LivestockRepo>();
+    services.AddScoped<IHealthRepo, HealthRepo>();
+
+    services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
     // Data
