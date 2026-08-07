@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MIS.API.Common.Responses;
-using MIS.Application.Features.DataCollection.Agricultures;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 
 namespace MIS.API.Features.DataCollection;
 

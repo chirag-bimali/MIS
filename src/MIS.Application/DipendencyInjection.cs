@@ -1,7 +1,7 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using MIS.Application.Features.Authentication;
-using MIS.Application.Features.DataCollection.Agricultures;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 using MIS.Application.Features.DataCollection.HouseholdInfo.Decisions;
 using MIS.Application.Features.DataCollection.HouseholdInfo.Economies;
 using MIS.Application.Features.DataCollection.HouseholdInfo.Facilities;

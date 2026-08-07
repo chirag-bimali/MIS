@@ -1,3 +1,5 @@
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
+
 public class CreateAgricultureDTO
 {
     public Guid FamilyId {get; set;}

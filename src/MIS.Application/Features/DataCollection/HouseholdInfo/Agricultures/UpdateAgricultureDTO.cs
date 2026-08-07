@@ -1,3 +1,5 @@
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
+
 public class UpdateAgricultureDTO
 {
     public Guid? LandUnitId { get; set; }
