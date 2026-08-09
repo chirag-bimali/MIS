@@ -1,5 +1,6 @@
 using FluentValidation;
-namespace MIS.Application.Features.DataCollection.Agricultures;
+
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 
 public class CreateAgricultureDTOValidator : AbstractValidator<CreateAgricultureDTO>
 {

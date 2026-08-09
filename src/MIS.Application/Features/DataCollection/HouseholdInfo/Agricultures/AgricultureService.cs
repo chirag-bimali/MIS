@@ -3,7 +3,7 @@ using MIS.Application.Common.Extensions;
 using MIS.Domain.Entities.DataCollection.HouseholdInfo;
 using MIS.Domain.Exceptions;
 
-namespace MIS.Application.Features.DataCollection.Agricultures;
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 
 public class AgricultureService : IAgricultureService
 {

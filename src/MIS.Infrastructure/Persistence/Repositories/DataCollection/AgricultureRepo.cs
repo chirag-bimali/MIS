@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MIS.Application.Features.DataCollection.Agricultures;
+using MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 using MIS.Domain.Entities.DataCollection.HouseholdInfo;
 using MIS.Infrastructure.Persistence.Data;
 

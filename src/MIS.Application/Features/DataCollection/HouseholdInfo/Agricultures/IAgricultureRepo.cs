@@ -1,6 +1,6 @@
 using MIS.Domain.Entities.DataCollection.HouseholdInfo;
 
-namespace MIS.Application.Features.DataCollection.Agricultures;
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 
 public interface IAgricultureRepo
 {

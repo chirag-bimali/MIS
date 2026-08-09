@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace MIS.Application.Features.DataCollection.Agricultures;
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 
 public class UpdateAgricultureDTOValidator : AbstractValidator<UpdateAgricultureDTO>
 {
@@ -63,7 +63,5 @@ public class UpdateAgricultureDTOValidator : AbstractValidator<UpdateAgriculture
                 landType.RuleFor(x => x.Area)
                     .GreaterThan(0).WithMessage("Area in hectares must be greater then 0.");
             });   
-
     }
-   
 }

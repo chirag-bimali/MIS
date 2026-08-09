@@ -1,4 +1,4 @@
-namespace MIS.Application.Features.DataCollection.Agricultures;
+namespace MIS.Application.Features.DataCollection.HouseholdInfo.Agricultures;
 public interface IAgricultureService
 {
     Task<AgricultureDTO> CreateAgricultureAsync(CreateAgricultureDTO dto);
