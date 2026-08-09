@@ -63,7 +63,5 @@ public class UpdateAgricultureDTOValidator : AbstractValidator<UpdateAgriculture
                 landType.RuleFor(x => x.Area)
                     .GreaterThan(0).WithMessage("Area in hectares must be greater then 0.");
             });   
-
     }
-   
 }
