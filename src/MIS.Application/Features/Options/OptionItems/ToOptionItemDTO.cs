@@ -8,9 +8,11 @@ public static class OptionItemMapper
         {
             Id = optionItem.Id,
             OptionListId = optionItem.OptionListId,
+            ChildOptionListId = optionItem.ChildOptionListId,
             Extra = optionItem.Extra,
             LabelEn = optionItem.LabelEn,
             LabelNe = optionItem.LabelNe
+
         };
     }
 }
