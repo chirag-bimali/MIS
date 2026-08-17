@@ -30,7 +30,8 @@ public class OptionItemService : IOptionItemService
         OptionListId = dto.OptionListId,
         Extra = dto.Extra,
         LabelEn = dto.LabelEn,
-        LabelNe = dto.LabelNe
+        LabelNe = dto.LabelNe,
+        ChildOptionListId = dto.ChildOptionListId
       });
 
     return optionItem.ToOptionItemDTO();
@@ -79,6 +80,15 @@ public class OptionItemService : IOptionItemService
     if (dto.Extra is not null)
     {
       optionItem.Extra = dto.Extra;
+    }
+    if (dto.ChildOptionListId.HasValue)
+    {
+      var childOptionList = await _optionListRepo.GetOptionListByIdAsync(dto.ChildOptionListId.Value);
+      if (childOptionList is null)
+      {
+        throw new NotFoundException(nameof(OptionList), nameof(OptionList.Id), dto.ChildOptionListId.Value);
+      }
+      optionItem.ChildOptionListId = dto.ChildOptionListId;
     }
 
     await _repo.UpdateOptionItemAsync(optionItem);
